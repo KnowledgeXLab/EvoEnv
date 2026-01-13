@@ -10,7 +10,7 @@ uv venv && uv sync
 
 ## Generate Benchmark Instances
 
-Each item's key is the abbreviation you provide for the model, and `model_name` is the actual name of the model provided by the service provider.
+Before you start building TraineeBench, you need to set up the API service. Create an `api_config.json` file in the root directory: `touch api_config.json`. And then fill in the following configuration.
 
 ```json
 {
@@ -28,6 +28,8 @@ Each item's key is the abbreviation you provide for the model, and `model_name` 
     },
 }
 ```
+
+Each item's key is the abbreviation you provide for the model, and `model_name` is the actual name of the model provided by the service provider.
 
 ```bash
 uv run environment/traineebench/gen_bench_from_config.py \
