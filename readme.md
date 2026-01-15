@@ -36,7 +36,7 @@
 
 Currently, EvoEnv supports the following benchmarks:
 
-- **[TraineeBench](docs/TraineeBench.md)**: See the [documentation]((docs/TraineeBench.md)) for instructions on configuration, instance generation, and running the example harness.
+- **[TraineeBench](docs/TraineeBench.md)**: See the [documentation](docs/TraineeBench.md) for instructions on configuration, instance generation, and running the example harness.
 
 
 ## 🧩 Core Components
