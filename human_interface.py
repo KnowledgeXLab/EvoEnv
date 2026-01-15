@@ -36,7 +36,7 @@ log_path = args.log_path
 
 
 env = Environment(
-    tasks_path=str(task_root_path),
+    task_path=str(task_root_path),
     log_level="INFO",
     log_path=log_path,
 )

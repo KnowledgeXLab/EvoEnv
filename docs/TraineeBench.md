@@ -48,9 +48,9 @@ Use the following command to procedurally generate benchmark instances based on 
 
 ```bash
 uv run environments/traineebench/gen_bench_from_config.py \
-    --config-path environments/traineebench/traineebench_config.json \
-    --bench-path  benchmarks/traineebench \
-    --npc-model   gpt-4o-mini
+--config-path environments/traineebench/traineebench_config.json \
+--bench-path  benchmarks/traineebench \
+--npc-model   gpt-4o-mini
 ```
 
 **Parameters:**
@@ -61,10 +61,13 @@ uv run environments/traineebench/gen_bench_from_config.py \
 Once generated, launch the benchmark evaluation harness:
 
 ```bash
-uv run run_bench.py
+uv run run_traineebench.py
 ```
 
 ## 🧩 Custom Benchmark
 
 *Instructions for creating custom TraineeBench scenarios via configuration files will be added here.*
+
+```
+
 ```

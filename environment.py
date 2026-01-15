@@ -90,11 +90,11 @@ def setup_logging(level: str = "INFO", log_path: str = ''):
 
 class Environment:
     def __init__(
-            self, tasks_path: str, log_level: str = 'INFO', log_path: str = ''
+            self, task_path: str, log_level: str = 'INFO', log_path: str = ''
         ) -> None:
-        self.task_root_path = tasks_path
-        self.workspace = os.path.join(tasks_path, 'workspace')
-        config_file = os.path.join(tasks_path, 'config.json')
+        self.task_root_path = task_path
+        self.workspace = os.path.join(task_path, 'workspace')
+        config_file = os.path.join(task_path, 'config.json')
         with open(config_file, 'r', encoding='utf-8') as rf:
             config: Dict = json.load(rf)
 

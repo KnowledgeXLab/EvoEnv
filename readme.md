@@ -32,6 +32,13 @@
 
     > **Note:** `uv sync` reads the `pyproject.toml` file to install the exact versions of dependencies required for this project.
 
+## 🏆 Run Environment
+
+Currently, EvoEnv supports the following benchmarks:
+
+- **[TraineeBench](docs/TraineeBench.md)**: See the documentation for instructions on configuration, instance generation, and running the example harness.
+
+
 ## 🧩 Core Components
 <div align="center">
   <img src="assets/agent_environment_interaction.png" width="60%" alt="Agent-environment Interaction">
@@ -63,16 +70,20 @@ EvoEnv is designed for extensibility. You can:
 
 
 ## 🎮 Human Interface
-EvoEnv includes a built-in **Web Viewer** to visualize and inspect agent traces. This allows researchers to debug interactions and analyze agent behavior step-by-step.
+EvoEnv includes a built-in **Web Viewer** to visualize and inspect agent traces. This allows researchers to debug interactions and analyze agent behavior step-by-step. Below is a usage example. After creating an instance of [TraineeBench](docs/TraineeBench.md), run the following command.
 
-## 🏆 Supported Benchmarks
+```bash
+uv run human_interface.py \
+--task-root benchmarks/traineebench/scenario_4kmtZc7e5NC2iAoTgNDsTG/day_1 \
+--log-path human_interface.log
+```
 
-Currently, EvoEnv supports the following benchmarks:
+Then, access http://127.0.0.1:8000 in your browser to view the interactive interface shown in the following image.
 
-- **[TraineeBench](docs/TraineeBench.md)**
-  - See the documentation for instructions on configuration, instance generation, and running the example harness.
-
-*If you add more benchmarks, please document them here along with example run commands and expected outputs.*
+<div align="center">
+  <img src="assets\screen_shot_for_human_interface.png" width="100%" alt="Agent-environment Interaction">
+</div>
+<br>
 
 ## 🤝 Contributing
 
