@@ -180,12 +180,12 @@ def generate_tool_des(func: Callable) -> str:
     return func_des
 
 
-if __name__ == '__main__':
-    import json
+# if __name__ == '__main__':
+#     import json
 
-    os_config = {
-        "action_costs": []
-    }
+#     os_config = {
+#         "action_costs": []
+#     }
 
     # try:
     #     sandbox=DockerSandbox('./sandbox_workspace')
